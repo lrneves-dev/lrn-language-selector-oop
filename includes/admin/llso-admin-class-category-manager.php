@@ -11,7 +11,13 @@ class CategoryManager {
         return $getCategories;
     }
     // Função de conteúdo echoavel para apresentar os conteúdos da página de admin
-    public function llso_manageCats() {
-        echo 'Manage Cats here';
-    }
+    public function llso_manageCats() { ?>
+        <div class="wrap">
+            <h2>Manage Categories</h2>
+            <p>By: L. R. Neves</p>
+            <div class="lmid-molduras-admin">
+                <h3>Managing Categories</h3>
+            </div>
+        </div>
+    <?php }
 }

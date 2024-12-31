@@ -50,10 +50,16 @@ class SelMenu {
             [$blogPageManager, 'llso_manageBlogPage'],
         ); //Função de callback
     }
-    public function llso_pagSelIdioma() {
-        //Conteúdo das funções de páginas de admin têm de ser em echo e não return
-        echo 'Olá Admin';
-    }
+    public function llso_pagSelIdioma() { 
+        //Conteúdo das funções de páginas de admin têm de ser em echo e não return ?>
+        <div class="wrap">
+            <h2><?php _e('Welcome to the page of the Language Selector Options Management', 'lrn-language-selector-oop'); ?></h2>
+            <p><?php _e('By: L. R. Neves', 'lrn-language-selector-oop'); ?></p>
+            <div class="lmid-molduras-admin">
+                <h3>Idioma por Defeito</h3>
+            </div>
+        </div>
+    <?php } 
     public function llso_hookaMenuAdmin() {
         /* A página de administração do plugin */
         add_action( 'admin_menu', [$this, 'llso_menu_admin'] );
