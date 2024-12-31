@@ -1,0 +1,71 @@
+div.llso-leva-selector {
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 5px;
+  right: 0;
+  overflow: visible;
+  opacity: 1;
+}
+body.admin-bar div.llso-leva-selector {
+  top: 37px;
+}
+@media (max-width: 780px) {
+  div.llso-leva-selector {
+    top: 5px;
+  }
+  body.admin-bar div.llso-leva-selector {
+    top: 5px;
+  }
+}
+.llso_button_idioma_default {
+  padding: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 0;
+  border-radius: 0;
+  background-color: #1a2021;
+  box-shadow: 0 1px 5px #25eded;
+}
+.llso_button_idioma_default:hover {
+  background-color: #293334;
+}
+div.llso-selector {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+div.llso-selector-opcoes {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #293334;
+  /* width:87%; */
+  color: #eee;
+  display: block;
+  opacity: 0;
+}
+
+div.llso-selector-opcoes a {
+  color: #eee;
+  display: inline-block;
+  padding: 5px 0 5px 0;
+  margin: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+div.llso-selector-opcoes a:hover {
+  background-color: #486f6e;
+}
+
+div.llso-selector:hover div.llso-selector-opcoes {
+  opacity: 100;
+  transition: all 0.3s ease;
+}
+img.llso_imagemOpcoes {
+  width: 30px;
+  padding-right: 10px;
+}
